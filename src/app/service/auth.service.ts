@@ -5,11 +5,12 @@ import { JwtDto } from '../model/jwt-dto';
 import { LoginUsuario } from '../model/login-usuario';
 import { NuevoUsuario } from '../model/nuevo-usuario';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://argprog-backend-production.up.railway.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

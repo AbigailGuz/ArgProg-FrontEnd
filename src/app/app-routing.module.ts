@@ -10,6 +10,7 @@ import { NewSkillComponent } from './components/hard-and-soft/new-skill.componen
 import { EditSkillComponent } from './components/hard-and-soft/edit-skill.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 
+
   const routes: Routes = [
   { path:'', component: HomeComponent },
   { path:'login',component:LoginComponent },
@@ -19,7 +20,7 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
   { path: 'editedu/:id', component: EditeducacionComponent },
   { path: 'newskill', component: NewSkillComponent},
   { path: 'editskill/:id', component: EditSkillComponent},
-  { path: 'editAcercaDe/:id', component: EditAcercaDeComponent }
+  { path:'editAcercaDe/:id', component: EditAcercaDeComponent}
 
   
 ];
@@ -27,6 +28,7 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
+
 })
 export class AppRoutingModule { }
 

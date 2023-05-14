@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { FirebaseStorage } from '@angular/fire/storage';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',

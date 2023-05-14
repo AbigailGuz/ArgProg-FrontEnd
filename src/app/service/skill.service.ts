@@ -3,11 +3,12 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Skill } from '../model/skill';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'http://localhost:8080/skill/';
+  URL = 'https://argprog-backend-production.up.railway.app/skill/';
 
   constructor(private httpClient:HttpClient) { }
 

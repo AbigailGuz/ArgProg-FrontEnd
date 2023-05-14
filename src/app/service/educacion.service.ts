@@ -4,11 +4,12 @@ import { Observable } from 'rxjs';
 import { Educacion } from '../model/educacion';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class EducacionService {
-URL = 'http://localhost:8080/educacion/';
+URL = 'https://argprog-backend-production.up.railway.app/educacion/';
 
 
   constructor(private httpClient: HttpClient) { }

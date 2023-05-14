@@ -18,20 +18,22 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
-import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
-import { NeweducacionComponent } from './components/educacion/neweducacion.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
 import { EditSkillComponent } from './components/hard-and-soft/edit-skill.component';
 import { NewSkillComponent } from './components/hard-and-soft/new-skill.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+
+
 
 
 @NgModule({
   declarations: [
-    
+  
     AppComponent,
     HeaderComponent,
     LogoArgPComponent,
@@ -47,15 +49,16 @@ import { environment } from '../environments/environment';
     NewExperienciaComponent,
     EditExperienciaComponent,
     NeweducacionComponent,
-    EditeducacionComponent,
-    EditSkillComponent,
     NewSkillComponent,
-    EditAcercaDeComponent,
-    
+    EditSkillComponent,
+    EditAcercaDeComponent, 
+    EditeducacionComponent
+  
 
   ],
 
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     FormsModule,
@@ -63,13 +66,13 @@ import { environment } from '../environments/environment';
     NgCircleProgressModule.forRoot({}),
     provideStorage(() => getStorage()),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    
-
-
+  
 
   ],
   providers: [
     interceptorProvider,
+    
+   
   
   ],
   
@@ -80,4 +83,3 @@ export class AppModule { }
 function forRoot(arg0: {}): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
   throw new Error('Function not implemented.');
 }
-

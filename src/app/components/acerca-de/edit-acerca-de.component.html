@@ -4,7 +4,7 @@
           <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
              <div class="form-group">
                  <label for="nombre">Nombre</label>
-                 <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" requied>
+                 <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
              </div>
              <div class="form-group">
                  <label for="apellido">Apellido</label>
@@ -22,8 +22,7 @@
                 <img [src]="imageService.url" alt="" width="200px">
             </div>
             <br>
-
-             <button class="btn btn-dark">
+              <button class="btn btn-dark">
                   Editar persona
              </button>
           </form>
